@@ -1,0 +1,15 @@
+Test Coverage
+
+The following tests should be covered in this application:
+
+1.  Unit tests for the "calculate_factorial(n)" function, to make sure that the function is calculating
+    the factorial of the entered number.
+
+2.  Integration tests for the application to make sure that the endpoints return thr correct responses for different
+    input cases.
+
+3.  End-to-end testing with selenium. This is to test the application as whole and from a perspective of a user.
+
+4.  Load testing, this is to make sure that the application can handle large traffic, without slowing down or crashing.
+
+

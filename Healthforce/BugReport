@@ -1,0 +1,29 @@
+Title:Number input validation is inconsistent
+
+Severity/Priority: High/Low
+
+Version: 1.00
+
+
+Description:There is an inconsistency when entering incorrect numbers in the form.Between no  number entered and
+            entering a negative number. The server returns a response with 500 status code and a message of
+            'internal server error' when there is no input. When entering a negative number it this different,
+            the server returns a response with a 200 statu code and a message comes up as 'We don't have enough
+            information to calculate the factorial.A confusion could occur to users due to this inconsistency.
+            It would be ideal to have a more consistent validation way.
+
+Steps to reproduce:
+                    1. Go to http://localhost:6464/factorial
+                    2.Submit the form without entering any number
+                    3.Take note of the response
+                    4.Enter a negative number (-14)
+                    5.Take note of the response
+
+Expected result: The server should return a consistent response for all input cases.
+
+Actual result: The server returns an inconsistent response for inputs
+
+Assigned: Josh-hf
+
+
+

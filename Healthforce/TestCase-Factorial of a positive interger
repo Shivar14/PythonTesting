@@ -1,0 +1,8 @@
+Title: Calculate the factorial of a positive integer
+
+1. Go to http://localhost:6464/factorial
+2. Enter a positive integer in the input field provided. (Any positive number,for eg 5)
+3. Click on the submit button and wait for response
+4. Server will return a response "The factorial of 5 is: 120", verify this.
+
+Expected result: The factorial will be correctly calculated by the server

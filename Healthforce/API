@@ -1,0 +1,15 @@
+The API call being made, along with the headers and parameters that are sent are:
+
+Method:POST
+
+URL:http://localhost:6464/factorial
+
+Status code: 200 ok
+
+Headers:
+Connection:close
+Content-Length:21
+Content-type: application/json
+
+Body:
+'number=7'
