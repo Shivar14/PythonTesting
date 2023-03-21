@@ -1,0 +1,20 @@
+Title:Incorrect calculation for negative values
+
+Severity/Priority: High/Low
+
+Version: 1.00
+
+Description:There is no error display message displayed when an negative number is entered in the field.
+
+Steps to reproduce:
+1. Go to http://localhost:6464/factorial
+2.Enter a negative number such as -5
+3.Submit the form
+4.Take note of the result
+
+Expected result: The application should return an error message, such as that the factorial is not defined for
+                negative numbers
+
+Actual result: The application returns a message saying 'Please enter an integer'
+
+Assigned: Josh-hf

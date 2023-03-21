@@ -15,3 +15,5 @@ Steps to reproduce:
 Expected result: The application should return an error status code
 
 Actual result: The application does not return any status code
+
+Assigned: Josh-hf
