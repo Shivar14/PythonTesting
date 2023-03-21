@@ -1,27 +1,25 @@
-Title:Number input validation is inconsistent
+Title:Large input number error
 
 Severity/Priority: High/Low
 
 Version: 1.00
 
 
-Description:There is an inconsistency when entering incorrect numbers in the form.Between no  number entered and
-            entering a negative number. The server returns a response with 500 status code and a message of
-            'internal server error' when there is no input. When entering a negative number it this different,
-            the server returns a response with a 200 statu code and a message comes up as 'We don't have enough
-            information to calculate the factorial.A confusion could occur to users due to this inconsistency.
-            It would be ideal to have a more consistent validation way.
+Description:Application does not return the correct value for a large number, application returns a value in
+            scientific format. Users with little math knowledge may not be able to relate to number given and this could
+            confuse the user. The application should return the actual number. For example if the number 100 is entered
+            the application returns '9.33262154439441e+157; , while the correct value is 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
 
 Steps to reproduce:
                     1. Go to http://localhost:6464/factorial
-                    2.Submit the form without entering any number
-                    3.Take note of the response
-                    4.Enter a negative number (-14)
-                    5.Take note of the response
+                    2.Enter a large number such as 100
+                    3.Submit the form
+                    4.Take note of the result
 
-Expected result: The server should return a consistent response for all input cases.
 
-Actual result: The server returns an inconsistent response for inputs
+Expected result: The application should correctly calculate the factorial of the number and display the result.
+
+Actual result: The application returns an incorrect result when the input is large number
 
 Assigned: Josh-hf
 
