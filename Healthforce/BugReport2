@@ -1,0 +1,17 @@
+Title:Large input number error
+
+Severity/Priority: High/Low
+
+Version: 1.00
+
+Description:There is no API response when a decimal number is entered. There is no status code returned. This is inconsistent. When a negative number or no number is entered, there is s status code of 500 returned. When a correct input is entered a 200 status code is returned. There is no return code when a decimal is entered. There should be a error return code returned as well.
+
+Steps to reproduce:
+1. Go to http://localhost:6464/factorial
+2.Enter a decimal such as 10.1
+3.Submit the form
+4.Take note of the result
+
+Expected result: The application should return an error status code
+
+Actual result: The application does not return any status code
